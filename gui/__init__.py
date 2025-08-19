@@ -35,6 +35,7 @@ class GUI(CTk):
         self.geometry("1150x600")
         self.resizable(False, False)
         self.config(bg=THEME.PRIMARY)
+        self.iconbitmap("./assets/icon.ico")
 
         self.create_widgets()
 
