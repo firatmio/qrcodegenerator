@@ -67,7 +67,7 @@ python main.py
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Screenshot
 
 > *Example UI after generating a QR code:*
 
