@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="github/logo.png" alt="QR Code Generator Screenshot" width="200">
-</p><br/>
+</p>
 
 # 🔳 QR Code Generator
 
