@@ -4,7 +4,7 @@
   <img src="github/logo.png" alt="QR Code Generator Screenshot" width="200">
 </p>
 
-# 🔳 QR Code Generator
+# QR Code Generator
 
 **Modern & Lightweight QR Code Generator with Python GUI**
 
