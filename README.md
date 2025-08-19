@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="github/logo_reserve.png" alt="QR Code Generator Screenshot" width="200">
+  <img src="github/logo.png" alt="QR Code Generator Screenshot" width="200">
 </p><br/>
 
 # 🔳 QR Code Generator
