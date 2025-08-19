@@ -41,8 +41,8 @@ It features a clean and modern **GUI built with CustomTkinter** for ease of use.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/firatmio/qr-code-generator.git
-cd qr-code-generator
+git clone https://github.com/firatmio/qrcodegenerator.git
+cd qrcodegenerator
 ```
 
 ### 2. Install Requirements
