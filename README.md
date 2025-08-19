@@ -1,8 +1,13 @@
 <div align="center">
 
+<p align="center">
+  <img src="github/logo_reserve.png" alt="QR Code Generator Screenshot" width="200">
+</p><br/>
+
 # 🔳 QR Code Generator
 
 **Modern & Lightweight QR Code Generator with Python GUI**
+
 
 *Generate QR codes instantly with a sleek CustomTkinter interface.*
 
