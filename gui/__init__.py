@@ -121,7 +121,40 @@ class GUI(CTk):
 
 
     def generate_qr_code(self):
-        ...
+        content = self.contentEntry.get("1.0", "end-1c").strip()
+        if not content:
+            mb.showerror("Error", "Content cannot be empty!")
+            return
+        
+        try:
+            self.image, self.image_path = generator(content, self.frontColor, self.backColor, self.border)
+            self.isEmpty = False
+            
+            if hasattr(self, 'qrCodeLabel'):
+                self.qrCodeLabel.destroy()
+            
+            img = Image.open(self.image_path).resize((342, 342), Image.LANCZOS)
+
+            img = self.round_corners(img, radius=12.5)
+
+            self.qrCode = ImageTk.PhotoImage(img)
+
+            self.qrCodeLabel = CTkLabel(
+                self.qrArea,
+                text="",
+                image=self.qrCode,
+                fg_color=THEME.PRIMARY_EXTRA_LIGHT,
+                bg_color=THEME.PRIMARY_EXTRA_LIGHT,
+                cursor="hand2"
+            )
+            self.qrCodeLabel.place(x=4, y=4)
+            self.qrCodeLabel.bind(
+                "<Button-1>",
+                lambda e: subprocess.run(["explorer", "/select,", os.path.normpath(self.image_path)])
+            )
+
+        except Exception as e:
+            mb.showerror("Error", f"Failed to generate QR Code: {e}")
 
 def start():
     app = GUI()
