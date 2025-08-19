@@ -72,7 +72,7 @@ python main.py
 > *Example UI after generating a QR code:*
 
 <p align="center">
-  <img src="assets/demo.png" alt="QR Code Generator Screenshot" width="720">
+  <img src="github/demo.png" alt="QR Code Generator Screenshot" width="720">
 </p>
 
 ---
